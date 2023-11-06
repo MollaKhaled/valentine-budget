@@ -33,3 +33,16 @@ function total() {
   setInnerText("total", totalSum);
 
 }
+
+document.getElementById("promo-code-btn").addEventListener('click', function () {
+  const promoCode = inputFieldValue("promo-code")
+  if (promoCode === 2023) {
+    const total = document.getElementById("total").innerText;
+    const sum = total - parseInt(total) * 0.2;
+    setInnerText("all-total", sum)
+
+  }
+  else {
+    alert("Wrong Promo Code Try With Valid Promo Code !!!")
+  }
+})
