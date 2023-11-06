@@ -31,6 +31,7 @@ function total() {
   const diary = document.getElementById("diary").innerText;
   const totalSum = parseInt(chocolate) + parseInt(rose) + parseInt(diary);
   setInnerText("total", totalSum);
+  
 
 }
 
